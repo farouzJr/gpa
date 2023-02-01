@@ -14,7 +14,7 @@ subs = int(input('Enter number of subjects : ').strip())
 for sub in range (1, subs + 1):
     sub1 = input(f'enter the sub number ({str(sub).zfill(2)}) : ')
     m = int(sub1[:sub1.index(' ')])
-    if m > 50 and m < 101:
+    if m >= 50 and m < 101:
         mark.append(m)
     else:
         mark.append(0)
